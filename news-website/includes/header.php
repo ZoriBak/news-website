@@ -19,7 +19,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <?php if (isset($_SESSION['user_id'])): ?> <!-- If a user is logged in -->
         <a href="profile.php">Profile</a> <!-- Show profile -->
         <a href="logout.php">Logout</a> <!-- Show logout  -->
-    <?php else: ?> <!-- Otherwise, show guest links -->
+    <?php else: ?> 
         <a href="login.php">Login</a> <!-- Link to login-->
         <a href="register.php">Register</a> <!-- Link to registration -->
     <?php endif; ?> 
